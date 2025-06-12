@@ -1,62 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Projeto em HTML</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      h2 {
+        margin-left: 5px;
+      }
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+      hr {
+        border: solid 1px gray;
+      }
+      #btn-voltar {
+        border: 1px solid black;
+        width: 20px;
+        margin-right: 10px;
+      }
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      ul li {
+        padding-bottom: 5px;
+      }
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      ul li a:hover {
+        color: red;
+      }
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      p {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Resumo das aulas de Primeiros Passos com HTML</h1>
+      <hr />
+      <a id="inicio"><h2>Sumário</h2></a>
+      <ul>
+        <li><a href="#cabecalho">Principais tags para cabeçalhos</a></li>
+        <li><a href="#texto">Tags para textos</a></li>
+        <li><a href="#listas">Tags para criar listas</a></li>
+        <li><a href="#semantico">HTML Semântico</a></li>
+        <li><a href="#rodape">Links de Apoio</a></li>
+      </ul>
+      <hr />
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <section id="cabecalho">
+        <h2>
+          <a href="#inicio"
+            ><img
+              title="Clique para Voltar"
+              id="btn-voltar"
+              src="assets/icons8-voltar-67.png"
+              alt="ícone para voltar ao início da página"
+          /></a>
+          Tags h1 até h6
+        </h2>
+        <blockquote>
+          <p>
+            <b>H1:</b> É o título principal da página, representando o tema
+            geral da página. Deve ser único em cada página.
+          </p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+          <p>
+            <b>H2:</b> Subtítulos que dividem a página em seções principais.
+          </p>
 
-</body>
+          <p><b>H3:</b> Subtítulos que detalham as seções criadas pelos H2.</p>
+
+          <p>
+            <b>H4, H5, H6:</b> São usados para subdividir ainda mais as seções,
+            proporcionando uma hierarquia mais detalhada.
+          </p>
+        </blockquote>
+      </section>
+
+      <hr />
+      <section id="texto">
+        <h2>
+          <a href="#inicio"
+            ><img
+              title="Clique para Voltar"
+              id="btn-voltar"
+              src="assets/icons8-voltar-67.png"
+              alt="ícone para voltar ao início da página"
+          /></a>
+          Tags para texto
+        </h2>
+
+        <blockquote>
+          <p>
+            Tag
+            <b> <q>p</q></b>
+            utilizamos para criar parágrafo.
+          </p>
+
+          <p>
+            Tag <b><q>mark</q></b> utilizamos para destacar textos.
+            <b><i>Exemplo:</i></b> texto <mark>marcado</mark> utilizando a tag
+            mark.
+          </p>
+
+          <p>
+            Tag <b><q>u</q></b> é utilizada para deixar o texto escrito com um
+            "underline".
+
+            <b><i>Exemplo:</i></b>
+            <u>texto utilizando a tag u</u>
+          </p>
+
+          <p>
+            Tag <b><q>small</q></b> representa comentários laterais e letras
+            pequenas, como direitos autorais e texto legal, independentemente de
+            sua apresentação estilizada. <b><i>Exemplo:</i></b>
+            <small>texto utilizando a tag small</small>
+          </p>
+
+          <p>
+            Tag <b><q>span</q></b> é um contêiner genérico em linha para
+            conteúdo fraseado , que não representa nada por natureza.
+          </p>
+
+          <p>
+            Tag <b><q>sub</q></b> Especifica o texto embutido que deve ser
+            exibido como subscrito por motivos exclusivamente tipográficos.
+            <b><i>Exemplo:</i></b> <sub>texto utilizando a tag sub</sub>
+          </p>
+
+          <p>
+            Tag <b><q>sup</q></b> Especifica o texto embutido que deve ser
+            exibido como sobrescrito por motivos exclusivamente tipográficos.
+            <b><i>Exemplo:</i></b> <sup>texto utilizando a tag sub</sup>
+          </p>
+        </blockquote>
+      </section>
+      <hr />
+
+      <section id="listas">
+        <h2>
+          <a href="#inicio"
+            ><img
+              title="Clique para Voltar"
+              id="btn-voltar"
+              src="assets/icons8-voltar-67.png"
+              alt="ícone para voltar ao início da página"
+          /></a>
+          Tags para criar listas
+        </h2>
+
+        <blockquote>
+          <p>
+            Tag <b><q>ul</q></b> para criar listas não ordenadas.
+          </p>
+          <b><i>Exemplo:</i></b>
+          <ul>
+            <li>Exemplo 1</li>
+            <li>Exemplo 2</li>
+            <li>Exemplo 3</li>
+          </ul>
+
+          <p>
+            Tag <b><q>ol</q></b> para criar listas ordenadas.
+          </p>
+          <b><i>Exemplo:</i></b>
+          <ol>
+            <li>Primeiro Exemplo</li>
+            <li>Secundo Exemplo</li>
+            <li>Terceiro Exemplo</li>
+          </ol>
+
+          <p>
+            Tag <b><q>li</q></b> representa cada item de uma lista, tanto na
+            ul(lista não ordenada),como na ol(lista ordenada);
+          </p>
+          <b><i>Exemplo:</i></b>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </blockquote>
+      </section>
+      <hr />
+
+      <section id="semantico">
+        <h2>
+          <a href="#inicio"
+            ><img
+              title="Clique para Voltar"
+              id="btn-voltar"
+              src="assets/icons8-voltar-67.png"
+              alt="ícone para voltar ao início da página"
+          /></a>
+          HTML Semântico
+        </h2>
+
+        <blockquote>
+          <p>
+            Tag <b><q>header</q></b> representa um grupo de suporte introdutório
+            ou navegacional. Pode conter alguns elementos de cabeçalho, mas
+            também outros elementos como um logotipo, rótulos de cabeçalho,
+            formulário de pesquisa, e outros.
+          </p>
+
+          <p>
+            Tag <b><q>main</q></b> representa o assunto principal da página,
+            podendo apenas existir uma única por página.
+          </p>
+
+          <p>
+            Tag <b><q>footer</q></b> representa o rodapé da página.
+          </p>
+
+          <p>
+            Tag <b><q>article</q></b> representa a criação de artigos na página,
+            para colocar assuntos independentes ou relacionados com o assunto
+            principal.
+          </p>
+
+          <p>
+            Tag <b><q>strong</q></b> é muito parecida com a tag <b><q>b</q></b
+            >(bold), porém com uma "força" semântica maior.
+          </p>
+
+          <p></p>
+        </blockquote>
+      </section>
+
+      <footer id="rodape">
+        <h2>
+          <a href="#inicio"
+            ><img
+              title="Clique para Voltar"
+              id="btn-voltar"
+              src="assets/icons8-voltar-67.png"
+              alt="ícone para voltar ao início da página"
+          /></a>
+          Links para apoio
+        </h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements"
+              target="_blank"
+              >MDN</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.homehost.com.br/blog/tutoriais/tags-html/"
+              target="_blank"
+              >Home Host</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.devmedia.com.br/comandos-e-tags-html5/23618"
+              target="_blank"
+              >DevMedia</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
